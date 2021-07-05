@@ -26,7 +26,7 @@ public class ReajusteServiceTest {
 	void reajusteDeveriaSerDeQuinzePorcentoQuandoDesempenhoForBom() {
 		ReajusteService service = new ReajusteService();
 		Funcionario fulano = 
-				new Funcionario("Fulano", LocalDate.now(), new BigDecimal("2000.00"));
+				new Funcionario("Ana", LocalDate.now(), new BigDecimal("2000.00"));
 		
 		service.concederReajuste(fulano, Desempenho.BOM);
 		
@@ -36,7 +36,7 @@ public class ReajusteServiceTest {
 	@Test
 	void reajusteDeveriaSerDeVintePorcentoQuandoDesempenhoForOtimo() {
 		ReajusteService service = new ReajusteService();
-		Funcionario fulano = new Funcionario("Fulano", LocalDate.now(), new BigDecimal("2000.00"));
+		Funcionario fulano = new Funcionario("Ana", LocalDate.now(), new BigDecimal("2000.00"));
 		
 		service.concederReajuste(fulano, Desempenho.OTIMO);
 		
